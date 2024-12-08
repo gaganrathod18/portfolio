@@ -2,45 +2,327 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            width: 100%;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 35px;
+            font-weight: 750;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn:hover {
+            background-color: rgb(255, 210, 50);
+            color: black;
+        }
+        .btn{
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+        }
+
+
+        .navbar .navbar-brand img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            padding-top: 80px; /* Adjusted to account for navbar height */
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            color: rgb(255, 210, 50);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .btn-warning {
+            background-color: rgb(255, 210, 50);
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-warning:hover {
+            background-color: #ffd700; /* Hover effect for buttons */
+        }
+
+        .glow-effect {
+            transition: transform 0.3s ease;
+        }
+
+        .glow-effect:hover {
+            transform: scale(1.05);
+        }
+
+        .card {
+            background-color: #333;
+            border: 1px solid rgb(255, 210, 50);
+            color: white;
+        }
+
+        .card .card-title {
+            color: rgb(255, 210, 50);
+        }
+
+        .carousel-inner img {
+            filter: brightness(70%);
+        }
+
+        .carousel-indicators button {
+            background-color: rgb(255, 210, 50);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Gagan Rathod</h1>
-    <img
-        src="https://media.licdn.com/dms/image/v2/D5603AQFL7JzgQq5ftQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1703100988771?e=2147483647&v=beta&t=sHttc8PYSK6Rxq8chXC8nI9V4X_mk0qLrSSIoU30T8M">
-    <h2>Summary</h2>
-    <p>
-        I am a hardworking and dedicated individual with experience in customer service and administration.
-    </p>
-    <hr />
-    <h2>Education</h2>
-    <ul>
-        <li>Bachelor of Technology - Indian Institute of Information Technology ,Dharwad
-            (2024-27)
-        </li>
-    </ul>
-    <hr />
-    <h2>Work Experience</h2>
-    <ul>
-        <li><h3>Customer Service Representative - ABC Inc.</h3>
-        June 2023 - Aug 2023
-        <p>
-        <ul>
-           <li>Answered customer inquiries via phone and email </li> 
-           <li> Resolved customer complaints and issues</li>
-           <li> Maintained customer records and updated account information</li>
-        </ul>
- <li><h3>Administrative Assistant - XYZ Corp.</h3></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="profile.jpeg" alt="Gagan's Image">
+                Rathod Gagan
+            </a>
 
-    </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">
+                            <button class="btn btn-dark w-100 w-sm-auto">
+                                Home
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <button class="btn btn-dark w-100 w-sm-auto">
+                                About
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">
+                            <button class="btn btn-dark w-100 w-sm-auto">
+                                Work
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <button class="btn btn-dark w-100 w-sm-auto">
+                                Contact
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        </
+    <!-- Home Section -->
+    <section id="home" class="container-fluid">
+        <!-- Portfolio Section -->
+        <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="891302.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="891265.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="891279.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 
-    </ul>
-<a href="contact.html"> contact</a>
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="section-title">About Me</h2>
+                <p class="text-muted">I'm a passionate web developer with experience in front-end and back-end development. I create intuitive and responsive websites and applications.</p>
+                <a href="#" class="btn btn-warning">Learn More</a>
+            </div>
+            <div class="col-md-6">
+                <img src="profile.jpeg" alt="Profile Image" class="img-fluid rounded-circle">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>HTML & CSS</h4>
+                    <p>Expert in creating responsive layouts using HTML5 and CSS3, with a strong focus on cross-browser compatibility.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>JavaScript</h4>
+                    <p>Proficient in JavaScript and modern front-end frameworks such as React and Vue.js to build dynamic user interfaces.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Backend Development</h4>
+                    <p>Experience with Node.js, Express, and MongoDB for building scalable and performant back-end applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="container py-5">
+        <h2 class="section-title">My Work Experience</h2>
+        <div id="workCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active glow-effect">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="work1.jpg" class="d-block w-100 rounded" alt="Work 1">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Frontend Developer - XYZ Company</h5>
+                            <p><strong>Duration:</strong> Jan 2022 - Present</p>
+                            <p>Worked on creating and maintaining responsive web pages for the company's client projects. Used technologies like HTML, CSS, and JavaScript to build user-friendly interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item glow-effect">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="work2.jpg" class="d-block w-100 rounded" alt="Work 2">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Full Stack Developer - ABC Agency</h5>
+                            <p><strong>Duration:</strong> Aug 2020 - Dec 2021</p>
+                            <p>Led a team of developers in building a full-stack application using Node.js, Express, and MongoDB for the agency's internal tools. Focused on optimizing the back-end for better performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item glow-effect">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="work3.jpg" class="d-block w-100 rounded" alt="Work 3">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Junior Developer - DEF Corp</h5>
+                            <p><strong>Duration:</strong> Jun 2019 - Jul 2020</p>
+                            <p>Assisted the senior development team in designing and implementing web applications. Improved code quality and reduced page load time by optimizing front-end assets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="#" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- At the end of the body section -->
+<script>
+    // Close the navbar when a nav item is clicked
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(item => {
+        item.addEventListener('click', () => {
+            const navbarCollapse = document.getElementById('navbarSupportedContent');
+            if (navbarCollapse.classList.contains('show')) {
+                navbarCollapse.classList.remove('show');
+            }
+        });
+    });
+</script>
+</body>
+
+
 </body>
 
 </html>
