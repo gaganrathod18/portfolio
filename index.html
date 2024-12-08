@@ -201,8 +201,9 @@
 
     <!-- About Section -->
 <section id="about" class="container py-5">
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row align-items-center">
+        <!-- Text Section -->
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
             <h2 class="section-title" style="font-size: 2.5rem;">About Me</h2>
             <p class="text-white" style="font-size: 1.25rem;">
                 "I’m a sophomore at IIIT Dharwad, passionate about web development
@@ -210,11 +211,13 @@
                 This version emphasizes your enthusiasm for the subjects while giving it a slightly more dynamic tone.
             </p>
         </div>
-        <div class="col--6">
+        <!-- Image Section -->
+        <div class="col-12 col-md-6">
             <img src="profile.jpeg" alt="Profile Image" class="img-fluid rounded-circle">
         </div>
     </div>
 </section>
+
 
 
     <!-- Skills Section -->
@@ -239,57 +242,62 @@
     </section>
 
     <!-- Work Section -->
-    <section id="work" class="container py-5">
-        <h2 class="section-title">My Work Experience</h2>
-        <div id="workCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-inner">
-                <div class="carousel-item active glow-effect">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <!-- <img src="work1.jpg" class="d-block w-100 rounded" alt="Work 1"> -->
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Frontend Developer - XYZ Company</h5>
-                            <p><strong>Duration:</strong> Jan 2022 - Present</p>
-                            <p>Worked on creating and maintaining responsive web pages for the company's client projects. Used technologies like HTML, CSS, and JavaScript to build user-friendly interfaces.</p>
-                        </div>
+<section id="work" class="container py-5" style="padding-top: 120px; padding-bottom: 120px;">
+    <h2 class="section-title" style=margin-bottom: 40px;">My Work Experience</h2>
+    <div id="workCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <!-- Carousel Item 1 -->
+            <div class="carousel-item active glow-effect">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Add your image here -->
                     </div>
-                </div>
-                <div class="carousel-item glow-effect">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <!-- <img src="work2.jpg" class="d-block w-100 rounded" alt="Work 2"> -->
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Full Stack Developer - ABC Agency</h5>
-                            <p><strong>Duration:</strong> Aug 2020 - Dec 2021</p>
-                            <p>Led a team of developers in building a full-stack application using Node.js, Express, and MongoDB for the agency's internal tools. Focused on optimizing the back-end for better performance.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item glow-effect">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <!-- <img src="work3.jpg" class="d-block w-100 rounded" alt="Work 3"> -->
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Junior Developer - DEF Corp</h5>
-                            <p><strong>Duration:</strong> Jun 2019 - Jul 2020</p>
-                            <p>Assisted the senior development team in designing and implementing web applications. Improved code quality and reduced page load time by optimizing front-end assets.</p>
-                        </div>
+                    <div class="col-md-6">
+                        <h5>Frontend Developer - XYZ Company</h5>
+                        <p><strong>Duration:</strong> Jan 2022 - Present</p>
+                        <p>Worked on creating and maintaining responsive web pages for the company's client projects. Used technologies like HTML, CSS, and JavaScript to build user-friendly interfaces.</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <!-- Carousel Item 2 -->
+            <div class="carousel-item glow-effect">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Add your image here -->
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="font-size: 2rem;">Full Stack Developer - ABC Agency</h5>
+                        <p><strong>Duration:</strong> Aug 2020 - Dec 2021</p>
+                        <p>Led a team of developers in building a full-stack application using Node.js, Express, and MongoDB for the agency's internal tools. Focused on optimizing the back-end for better performance.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Item 3 -->
+            <div class="carousel-item glow-effect">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Add your image here -->
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="font-size: 2rem;">Junior Developer - DEF Corp</h5>
+                        <p><strong>Duration:</strong> Jun 2019 - Jul 2020</p>
+                        <p>Assisted the senior development team in designing and implementing web applications. Improved code quality and reduced page load time by optimizing front-end assets.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="bg-dark text-white py-5">
@@ -361,8 +369,6 @@
       </div>
     </div>
   </footer>
-  
 
 </body>
-
 </html>
